@@ -1,0 +1,12 @@
+{
+  "frontend/src/App.tsx": "Main application component that composes all landing page sections (Hero, About, BusinessAreas, Values, Contact, Footer) with toast notifications.",
+  "frontend/src/components/Hero.tsx": "Hero section component featuring the new white Fons Vita logo (PNG FONS LOGO E BARDHE.png), company name without \"sh.p.k.\", tagline, CTA button with smooth scroll to contact, and animated background with hero image overlay.",
+  "frontend/src/components/About.tsx": "About section component displaying company mission, B2B trading expertise, and three key feature cards (Global Reach, Market Expertise, B2B Focus).",
+  "frontend/src/components/BusinessAreas.tsx": "Business areas section showcasing five service cards (Traffic Safety, Steel Trading, Energy Trading, Commerce, Crypto Investments) with icons and hover effects.",
+  "frontend/src/components/Values.tsx": "Core values section presenting three value cards (Trust, Innovation, Global Partnerships) with gradient backgrounds and icons.",
+  "frontend/src/components/Contact.tsx": "Contact section with form submission to backend, updated contact information (Kavaja address, info@fonsvita.com email, www.fonsvita.com website), and business hours display with validation and toast feedback.",
+  "frontend/src/components/Footer.tsx": "Footer component with Fons Vita logo, company info, quick links, updated contact details (Kavaja, Albania, info@fonsvita.com, www.fonsvita.com), social media icons, and caffeine.ai attribution.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for backend integration including contact form submission and retrieval mutations/queries.",
+  "frontend/src/index.css": "Global styles with OKLCH-based blue-gray metallic color system, steel color utilities, and smooth scroll behavior.",
+  "frontend/tailwind.config.js": "Tailwind configuration extended with steel color palette (50-900 shades) for the metallic trading aesthetic."
+}

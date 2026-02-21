@@ -1,0 +1,183 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.625rem;
+        
+        /* Blue-gray metallic color scheme for light mode */
+        --background: 0.98 0.005 240;
+        --foreground: 0.15 0.015 240;
+        
+        --card: 1 0 0;
+        --card-foreground: 0.15 0.015 240;
+        
+        --popover: 1 0 0;
+        --popover-foreground: 0.15 0.015 240;
+        
+        --primary: 0.25 0.02 240;
+        --primary-foreground: 0.98 0.005 240;
+        
+        --secondary: 0.92 0.01 240;
+        --secondary-foreground: 0.25 0.02 240;
+        
+        --muted: 0.94 0.008 240;
+        --muted-foreground: 0.50 0.015 240;
+        
+        --accent: 0.90 0.012 240;
+        --accent-foreground: 0.20 0.018 240;
+        
+        --destructive: 0.577 0.245 27.325;
+        --destructive-foreground: 0.985 0 0;
+        
+        --border: 0.88 0.01 240;
+        --input: 0.88 0.01 240;
+        --ring: 0.50 0.025 240;
+        
+        /* Steel/metallic tones */
+        --steel-50: 0.97 0.005 240;
+        --steel-100: 0.93 0.008 240;
+        --steel-200: 0.85 0.012 240;
+        --steel-300: 0.70 0.018 240;
+        --steel-400: 0.55 0.025 240;
+        --steel-500: 0.45 0.030 240;
+        --steel-600: 0.35 0.028 240;
+        --steel-700: 0.28 0.025 240;
+        --steel-800: 0.20 0.020 240;
+        --steel-900: 0.15 0.015 240;
+        
+        --chart-1: 0.646 0.222 41.116;
+        --chart-2: 0.6 0.118 184.704;
+        --chart-3: 0.398 0.07 227.392;
+        --chart-4: 0.828 0.189 84.429;
+        --chart-5: 0.769 0.188 70.08;
+    }
+
+    .dark {
+        --background: 0.12 0.015 240;
+        --foreground: 0.95 0.005 240;
+        
+        --card: 0.16 0.018 240;
+        --card-foreground: 0.95 0.005 240;
+        
+        --popover: 0.14 0.016 240;
+        --popover-foreground: 0.95 0.005 240;
+        
+        --primary: 0.75 0.015 240;
+        --primary-foreground: 0.12 0.015 240;
+        
+        --secondary: 0.22 0.020 240;
+        --secondary-foreground: 0.95 0.005 240;
+        
+        --muted: 0.20 0.018 240;
+        --muted-foreground: 0.65 0.012 240;
+        
+        --accent: 0.28 0.022 240;
+        --accent-foreground: 0.95 0.005 240;
+        
+        --destructive: 0.704 0.191 22.216;
+        --destructive-foreground: 0.12 0.015 240;
+        
+        --border: 0.25 0.020 240;
+        --input: 0.25 0.020 240;
+        --ring: 0.55 0.025 240;
+        
+        --chart-1: 0.488 0.243 264.376;
+        --chart-2: 0.696 0.17 162.48;
+        --chart-3: 0.769 0.188 70.08;
+        --chart-4: 0.627 0.265 303.9;
+        --chart-5: 0.645 0.246 16.439;
+    }
+
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings: "rlig" 1, "calt" 1;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+@layer utilities {
+    .steel-50 {
+        color: oklch(var(--steel-50));
+    }
+    .steel-100 {
+        color: oklch(var(--steel-100));
+    }
+    .steel-200 {
+        color: oklch(var(--steel-200));
+    }
+    .steel-300 {
+        color: oklch(var(--steel-300));
+    }
+    .steel-400 {
+        color: oklch(var(--steel-400));
+    }
+    .steel-500 {
+        color: oklch(var(--steel-500));
+    }
+    .steel-600 {
+        color: oklch(var(--steel-600));
+    }
+    .steel-700 {
+        color: oklch(var(--steel-700));
+    }
+    .steel-800 {
+        color: oklch(var(--steel-800));
+    }
+    .steel-900 {
+        color: oklch(var(--steel-900));
+    }
+    
+    .bg-steel-50 {
+        background-color: oklch(var(--steel-50));
+    }
+    .bg-steel-100 {
+        background-color: oklch(var(--steel-100));
+    }
+    .bg-steel-200 {
+        background-color: oklch(var(--steel-200));
+    }
+    .bg-steel-300 {
+        background-color: oklch(var(--steel-300));
+    }
+    .bg-steel-400 {
+        background-color: oklch(var(--steel-400));
+    }
+    .bg-steel-500 {
+        background-color: oklch(var(--steel-500));
+    }
+    .bg-steel-600 {
+        background-color: oklch(var(--steel-600));
+    }
+    .bg-steel-700 {
+        background-color: oklch(var(--steel-700));
+    }
+    .bg-steel-800 {
+        background-color: oklch(var(--steel-800));
+    }
+    .bg-steel-900 {
+        background-color: oklch(var(--steel-900));
+    }
+    
+    .border-steel-500 {
+        border-color: oklch(var(--steel-500));
+    }
+    
+    .text-steel-300 {
+        color: oklch(var(--steel-300));
+    }
+    .text-steel-400 {
+        color: oklch(var(--steel-400));
+    }
+    .text-steel-500 {
+        color: oklch(var(--steel-500));
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "backend/main.mo": "Motoko actor implementing contact form submission and retrieval with email validation, duplicate message detection, and component feature flags.",
+  "feature_evidence.json": "Feature evidence report documenting the logo replacement feature in the Hero section with high confidence.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of all frontend files including components, hooks, and configuration with details about the white Fons logo and updated contact information.",
+  "frontend/index.css": "Tailwind CSS base styles with OKLCH color system variables for light and dark themes, including sidebar and chart colors.",
+  "frontend/index.html": "HTML entry point for the Fons Vita landing page with root div and module script reference.",
+  "frontend/src/App.tsx": "Main React app component composing Hero, About, BusinessAreas, Values, Contact, Footer sections with Toaster for notifications.",
+  "frontend/src/components/About.tsx": "About section component displaying company mission, B2B trading focus, and three feature cards (Global Reach, Market Expertise, B2B Focus) with icons.",
+  "frontend/src/components/BusinessAreas.tsx": "Business areas section showcasing five service cards (Traffic Safety, Steel Trading, Energy Trading, Commerce, Crypto Investments) with icons, gradients, and hover effects.",
+  "frontend/src/components/Contact.tsx": "Contact form component with validation, backend submission via React Query mutation, and contact information display (Kavaja address, info@fonsvita.com, www.fonsvita.com).",
+  "frontend/src/components/Footer.tsx": "Footer component displaying company info, quick navigation links, contact details, and social media icons for Fons Vita. Includes logo, address in Kavaja Albania, email, website, and links to LinkedIn, Facebook, and X (Twitter).",
+  "frontend/src/components/Hero.tsx": "Hero section component with full-screen background image, company logo, tagline \"Connecting Trade, Energy, and Innovation\", and CTA button that scrolls to contact section. Features animated grid pattern overlay and scroll indicator.",
+  "frontend/src/components/Values.tsx": "Values section component displaying three core values (Trust, Innovation, Global Partnerships) in a responsive grid with gradient icons and hover effects. Each card includes title, description, and decorative elements.",
+  "frontend/src/hooks/useActor.ts": "Custom React hook that manages the backend actor instance using React Query, creating authenticated or anonymous actors based on Internet Identity state. Automatically invalidates and refetches dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "React context provider and hook for Internet Identity authentication on ICP. Manages login state, identity persistence, and provides login/logout functions with configurable AuthClient options.",
+  "frontend/src/hooks/useQueries.ts": "Custom React Query hooks for contact form operations: submitting new forms, fetching all forms, and counting total forms. All hooks depend on the actor from useActor and handle loading states appropriately.",
+  "frontend/src/index.css": "Tailwind CSS configuration with custom OKLCH color variables defining a blue-gray metallic theme for light and dark modes. Includes steel color utilities (50-900 shades) and base styling for smooth scrolling and typography.",
+  "frontend/src/main.tsx": "Application entry point that sets up React root with QueryClientProvider for React Query and InternetIdentityProvider for ICP authentication, then renders the main App component.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration file that defines custom color schemes using OKLCH color space, extends theme with custom colors (steel palette, chart colors), border radius variables, shadows, and accordion animations. Includes typography, container queries, and animate plugins.",
+  "project_state.json": "Project state metadata tracking a feature request to replace the Hero section header logo with an uploaded white Fons logo PNG file. Contains schema version, architectural notes, known issues, and existing features list."
+}
